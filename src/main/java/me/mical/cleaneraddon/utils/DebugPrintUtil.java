@@ -19,7 +19,7 @@ public class DebugPrintUtil {
         result.add("&7掉落物数量: &a" + TempStorage.itemMap.get(data).size() + "&7.");
         result.add("&7掉落物品:");
         TempStorage.itemMap.get(data).forEach(object -> {
-            final String name = BasicUtil.thisOrElse(BasicUtil.canReturn(object.getItemMeta(), ItemMeta::getDisplayName), object.getType().toString());
+            final String name = BasicUtil.thisOrElse(BasicUtil.canReturn(object.getItemMeta(), itemMeta -> BasicUtil.thisOrElse(itemMeta.getDisplayName(), object.getType().name())), object.getType().name());
             result.add(I18n.format("&9- &f物品 &c{0} &c* {1} &f(&9{2}&f)", name, object.getAmount(), "ItemStack.class"));
             BasicUtil.canDo(BasicUtil.canReturn(object.getItemMeta(), ItemMeta::getLore), strings -> strings.forEach(s -> result.add(I18n.format("&7|  {0}", s))));
         });
