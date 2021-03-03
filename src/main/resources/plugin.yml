@@ -1,0 +1,10 @@
+name: CleanerAddon
+version: ${project.version}
+main: me.mical.cleaneraddon.CleanerAddon
+api-version: 1.16
+authors: [ Mical ]
+commands:
+  cleaneraddon:
+    aliases:
+      - "ca"
+      - "caddon"

@@ -1,0 +1,5 @@
+Plugin:
+  Prefix: "&9&lCleanerAddon"
+  INFO: "&a>>&r "
+  WARN: "&e>>&r "
+  ERROR: "&c>>&r "

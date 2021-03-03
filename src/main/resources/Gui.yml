@@ -1,0 +1,30 @@
+Settings:
+  Title: "垃圾箱"
+  Row: 6
+Items:
+  Template:
+    Position:
+      X: "1-9"
+      Y: "1-5"
+  Next:
+    ItemStack:
+      Display: "&r下一页"
+      Material: BOOK
+      Lore:
+        - ''
+        - '  &7点击翻到 &c下一页'
+        - ''
+    Position:
+      X: "8"
+      Y: "6"
+  Previous:
+    ItemStack:
+      Display: "&r上一页"
+      Material: BOOK
+      Lore:
+        - ''
+        - '  &7点击翻到 &c上一页'
+        - ''
+    Position:
+      X: "2"
+      Y: "6"
