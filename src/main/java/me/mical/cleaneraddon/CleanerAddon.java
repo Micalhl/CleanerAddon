@@ -9,6 +9,7 @@ public final class CleanerAddon extends PPlugin {
     @Override
     protected void preload() {
         pConfig = ConfigManager.getInstance();
+        registerStats(10578, null);
     }
 
     @Override
