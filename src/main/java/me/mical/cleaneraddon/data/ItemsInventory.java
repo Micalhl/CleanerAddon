@@ -32,7 +32,6 @@ public class ItemsInventory extends PInventory<List<ItemStack>> {
                             .base(InventoryButton.builder()
                                     .base(base.get(key, 1, user -> true))
                                     .onClick(inventoryClickEvent -> {
-                                        System.out.println(1);
                                         final HashMap<Integer, ItemStack> out = viewer.getInventory().addItem(inventoryClickEvent.getCurrentItem());
                                         if (!out.isEmpty()) {
                                             for (Map.Entry<Integer, ItemStack> entry : out.entrySet()) {
